@@ -799,16 +799,6 @@ gadgets.config.init({"core.io":{"jsonProxyUrl":"//%host%/gadgets/makeRequest","p
 </head><body dir="ltr">
 	<div id="fb-root"></div>
 	
-	<script>
-	// Issue a warning if trying to preview an exported project on disk.
-	(function(){
-		// Check for running exported on file protocol
-		if (window.location.protocol.substr(0, 4) ==="file")
-		{
-			alert("Exported games won't work until you upload them. (When running on the file:/// protocol, browsers block many features from working for security reasons.)");
-		}
-	})();
-	</script>
 	
 	<!-- The canvas must be inside a div called c2canvasdiv -->
 	<div id="c2canvasdiv">
@@ -828,8 +818,8 @@ gadgets.config.init({"core.io":{"jsonProxyUrl":"//%host%/gadgets/makeRequest","p
 		
 	</div>
 
-	<script src="/jquery-2.1.1.min.js"></script>
-	<script src="/c2runtime.js"></script>
+	<script src="jquery-2.1.1.min.js"></script>
+	<script src="c2runtime.js"></script>
    <script>
 		// Start the Construct 2 project running on window load.
 		jQuery(document).ready(function ()
